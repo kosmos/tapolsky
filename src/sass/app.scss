@@ -1,0 +1,51 @@
+@import "helpers/all";
+@import "generated/iconfont";
+@import "generated/sprite-svg";
+// @import "generated/sprite-png";
+@import "common";
+@import "layouts";
+@import "main";
+@import "variables";
+
+// Стили Slick slider-а
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+// @import "../../node_modules/fullpage.js/dist/jquery.fullpage.min";
+
+
+//= include ../blocks/**/*.scss
+
+html {
+    position: relative;
+    font-size: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+
+    @include r(1440) {
+        font-size: 100%;
+    }
+
+    @include r(1200) {
+        font-size: 90%;
+    }
+
+    @include r(1024) {
+        font-size: 80%;
+    }
+
+    @include r(640) {
+        font-size: 60%;
+    }
+
+}
+
+body {
+    font-family: $casper;
+    width: 100vw;
+    position: relative;
+}
+
+.section {
+    overflow: hidden;
+}
