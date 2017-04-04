@@ -32,5 +32,9 @@
     &__text {
         padding-top: 10px;
         font-size: 0.8em;
+
+         @include r(1023) {
+            font-size: 0.6em;
+        }
     }
 }
