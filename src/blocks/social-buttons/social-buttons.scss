@@ -1,0 +1,29 @@
+$item-size: 50px;
+
+.social-buttons {
+    display: flex;
+
+    &__item {
+        margin: 20px;
+        color: $white;
+    }
+
+    &__img {
+        width: $item-size;
+        margin: auto;
+    }
+
+    &__link {
+        display: flex;
+        text-decoration: none;
+        color: $white;
+        font-family: 'Bad Script', cursive;
+        flex-direction: column;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        padding-top: 10px;
+    }
+}

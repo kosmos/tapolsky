@@ -1,4 +1,10 @@
+include ../donation/donation
+include ../social-buttons/social-buttons
+
 mixin b_main(data)
-	+b.main&attributes(attributes)
-		h1 Тут живе Тапольський!
+    +b.main&attributes(attributes)
+        +e("h1").header Квартира Тапольського
+        +e.donation
+            +b_donation()
+        +b_social-buttons()
 
