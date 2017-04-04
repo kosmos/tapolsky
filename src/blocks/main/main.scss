@@ -8,6 +8,10 @@
     color: $white;
     flex-direction: column;
 
+    @include r(1023) {
+        width: 100%;
+    }
+
     &__header {
         display: block;
     }

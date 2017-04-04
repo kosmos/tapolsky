@@ -1,16 +1,22 @@
-$item-size: 50px;
-
 .social-buttons {
     display: flex;
 
     &__item {
         margin: 20px;
         color: $white;
+
+        @include r(1023) {
+            margin: 10px;
+        }
     }
 
     &__img {
-        width: $item-size;
+        width: 50px;
         margin: auto;
+
+        @include r(1023) {
+            width: 30px;
+        }
     }
 
     &__link {
@@ -25,5 +31,6 @@ $item-size: 50px;
 
     &__text {
         padding-top: 10px;
+        font-size: 0.8em;
     }
 }
