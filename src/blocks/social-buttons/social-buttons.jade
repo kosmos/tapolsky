@@ -2,6 +2,6 @@ mixin b_social-buttons(data)
     +b("ul").social-buttons&attributes(attributes)
         each item in social
             +e("li").item
-                +e("a").link(href="#{item[1]}")
+                +e("a").link(href="#{item[1]}" target="_blank")
                     +e("img").img(src="./img/button.png" alt="button")
                     +e.text #{item[0]}
