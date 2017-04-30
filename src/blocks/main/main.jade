@@ -1,5 +1,7 @@
 include ../donation/donation
 include ../social-buttons/social-buttons
+include ../t-shirt/t-shirt
+include ../archive/archive
 
 mixin b_main(data)
     +b.main&attributes(attributes)
@@ -7,4 +9,5 @@ mixin b_main(data)
         +e.donation
             +b_donation()
         +b_social-buttons()
-
+        +b_t-shirt()
+        +b_archive()

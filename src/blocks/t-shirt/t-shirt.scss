@@ -1,0 +1,11 @@
+.t-shirt {
+    margin-top: 40px;
+
+    &__link {
+        display: block;
+        color: $white;
+        text-decoration: none;
+        font-family: 'Bad Script', cursive;
+        padding: 10px;
+    }
+}

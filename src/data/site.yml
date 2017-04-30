@@ -25,3 +25,19 @@ social:
 donation:
     link: "https://sendmoney.privatbank.ua/ru/?hash=225145333"
     text: "Сплатити комунальні"
+
+
+# Архів випусків
+archive:
+    -
+        - "002"
+        - "Bpfm4rYncdY"
+    -
+        - "003"
+        - "2tti8Q89Gw8"
+    -
+        - "004"
+        - "znIN3MLc6Uw"
+    -
+        - "005"
+        - "5g2-7U1Lzpg"

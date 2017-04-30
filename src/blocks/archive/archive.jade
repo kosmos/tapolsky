@@ -1,0 +1,9 @@
+include ../youtube/youtube
+
+mixin b_archive(data)
+    +b.archive&attributes(attributes)
+        +e("h2").header Архів випусків
+        each item in archive
+            +e("h3").sub-header #{item[0]}
+            +e.vide
+                +b_youtube(item[1])
