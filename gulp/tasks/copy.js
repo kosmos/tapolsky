@@ -17,6 +17,12 @@ gulp.task('copy:php', function() {
         .pipe(gulp.dest(config.dest.php));
 });
 
+gulp.task('copy:cname', function() {
+    return gulp
+        .src(config.src.root + '/CNAME')
+        .pipe(gulp.dest(config.dest.root));
+});
+
 gulp.task('copy:audio', function() {
     return gulp
         .src(config.src.audio + '/*.{mp3,wav,ogg}')
@@ -56,7 +62,8 @@ gulp.task('copy', [
     // 'copy:lib',
     'copy:audio',
     'copy:fonts',
-    'copy:php'
+    'copy:php',
+    'copy:cname'
 ]);
 gulp.task('copy:watch', function() {
     gulp.watch([config.src.img+'/*',config.src.blocks + '/**/*.{jpg,png,jpeg,svg,gif}'], ['copy']);
